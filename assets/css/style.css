@@ -343,6 +343,11 @@ header {
     gap: 1rem;
 }
 
+#level3Business .image-pop {
+    display: flex;
+    overflow: hidden;
+}
+
 /* Section Level 3 continuation */
 #level3Content {
     font-family: var(--font-work);
@@ -549,18 +554,20 @@ footer span {
 
     .pop-content {
         font-size: 14px;
+        padding:1rem
     }
 
     .after-pop{
         max-width: 620px;
     }   
 
-    /*------------------ Header Styles ------------------*/
+    /* Section Steps 1 and 2 - Steps Block */
 
-    
-
-
-
+    #stepsBlock .block-pop {
+        padding: 1.25rem 1rem;
+        width: 600px;
+        margin: 2rem auto;
+    }
      
 }
 
@@ -577,8 +584,13 @@ footer span {
         grid-template-columns: 1fr;
     }
 
-    .after-pop{
+    .after-pop,
+    .before-pop{
         max-width: 300px;
+    }
+
+    .pop-content-2 {
+        padding: 1.25rem 1rem;
     }
 
     /*------------------ Header Styles ------------------*/
@@ -587,5 +599,45 @@ footer span {
         margin-bottom: 9rem;
     }
 
-    
+    /* Who Are We Section*/
+
+    .ptb-5 {
+        padding-bottom: 8rem;
+        margin-bottom: 12rem;
+    }
+
+    #whoAreWe  .bio-card  {
+        grid-template-columns: 1fr;
+    }
+
+    /* Section Millions in Bank */
+
+    #MillionInBank .after-pop {
+        bottom: -12rem;
+    }
+
+    /* Section Level 3 business */
+    #level3business {
+        padding-bottom: 7rem;
+        margin-bottom: 7rem;
+    }
+
+    #level3business .image-pop {
+        width: var(--container-sm);
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    #level3business .after-pop {
+
+    }
+
+    #level3business img {
+        width: 100%;
+    }
+
+    #stepsBlock .block-pop {
+        width: 300px;
+    }
 }

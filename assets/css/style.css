@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+    --color-blue-1: #4cafe3;
+    --color-blue-2: #19365e;
+
+    --color-red-1: #FF5F76;
+
+    --color-orange-1: #f6a220;
+    
+    --color-yellow-1: #fce9cd;
+
+    --color-gray-1: #3C3C3B;
+
+    --color-white-1: #fff;
+
+    --container-lg: 65%;
+    --container-md: 85%;
+    --container-sm: 90%;
+
+    --font-roboto: 'Roboto', sans-serif;
+    --font-roboto-cond: 'Roboto Condensed', sans-serif;
+    --font-work: 'Work Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-roboto-cond);
+    font-weight: 400;
+}
+ h2 {
+    font-size: 40px;
+ }
+
+ h3{
+    font-size: 30px;
+ }
+
+ h4{
+    font-size: 24px;
+ }
+
+body{
+    font-family: var(--font-roboto);
+}
+
+
+.container{ 
+    width: var(--container-lg);
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+
+/*------------------ Helpers --------------------*/
+
+.ptb-5 {
+    padding: 7rem 0;
+    margin:7rem 0;
+
+}
+
+.row-2x{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.pop-content {
+    background: var(--color-yellow-1);
+    color: var(--color-blue-2);
+    font-family: var(--font-work);
+    font-size: 16px;
+    text-align: center;
+    padding: 2rem 1.875rem;
+}
+
+.pop-content-2 {
+    background: var(--color-orange-1);
+    color: var(--color-blue-2);
+    font-family: var(--font-work);
+    font-size: 16px;
+    text-align: center;
+    padding: 2rem 1.875rem;
+}
+
+.pop-content-2 h2 {
+    font-family: var(--font-roboto-cond);
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--color-blue-2) !important;
+}
+
+.pop-content  p,
+.pop-content-2  p {
+    margin-bottom: .6rem;
+    font-weight: 400 !important;
+}
+
+.pop-content a {
+    color: var(--color-red-1);
+}
+
+.boxed-content {
+    background: var(--color-orange-1);
+    color: var(--color-gray-1);
+    padding: .25rem;
+}
+
+.boxed-content h3{
+    font-family: var(--font-roboto);
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+hr {
+    border-bottom: solid 2px var(--color-white-1);
+    margin:1rem
+}
+
+.after-pop {
+    position: absolute;
+}
+
+.before-pop {
+    position: absolute;
+    top: -5rem;
+}
+
+section {
+    margin: 1rem 0;
+}
+
+.relative-section {
+    position: relative;
+}
+
+.bg-blue-2 {
+    background: var(--color-blue-2);
+    color: var(--color-white-1);
+}
+
+.bg-blue-2 h2 {
+    font-family: var(--font-roboto-cond);
+    color: var(--color-orange-1);
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.bg-blue-2 p {
+    font-family: var(--font-work);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/*------------------ Header Styles ------------------*/
+
+header {
+    background: var(--color-blue-1);
+    color:var(--color-white-1);
+    position: relative;
+    padding-bottom: 4.5rem;
+    margin-bottom: 7.5rem;
+}
+
+.header__container {
+    padding-top:3rem;
+}
+
+.header__container .row-2x{
+    margin-bottom: 1rem;
+}
+
+.header__container h2 {
+    font-family: var(--font-roboto-cond);
+    font-weight: 400;
+    text-align: center;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.header__container h1{
+    font-family: var(--font-roboto-cond);
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.header__container p {
+    font-family: var(--font-work);
+}
+
+.header__container .banner-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__container .banner-image img {
+    width: 280px;
+}
+
+/*------------------ Section Styles ------------------*/
+
+.title__row {
+    text-align: center;
+    margin: 1.5rem auto;
+    font-family: var(--font-roboto-cond)
+}
+
+.title__row h2,h3 {
+    font-weight: 400;
+    color: var(--color-blue-2);
+    text-transform: uppercase;
+}
+
+.title__row h2 {
+    font-size: 40px;
+}
+
+.title__row h3 {
+    font-size: 30px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 280px;
+}
+
+.info-section {
+    color: var(--color-blue-2);
+    font-family: var(--font-work);
+    padding-top: 1rem;
+}
+
+/* Section Millions in Bank */
+
+#MillionInBank .after-pop {
+    bottom: -6rem;
+}
+
+
+/* Section who are we */
+#whoAreWe {
+    margin: 3rem 0;
+    padding: 3rem 0;
+}
+
+#whoAreWe .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:1rem
+}
+
+#whoAreWe .container .title-row h2 {
+    text-align: center;
+    font-family: var(--font-roboto-cond);
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#whoAreWe  .bio-card {
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap: 2rem;
+    margin: 1rem 0;
+    border: solid 1px transparent;
+    border-radius: 7px;
+    padding: 1.75rem 1rem;
+}
+
+#whoAreWe  .bio-card.blue-card {
+    background: var(--color-blue-1);
+    color:var(--color-white-1)
+}
+
+#whoAreWe  .bio-card .bio-content p {
+    line-height: 1.5;
+    font-family: var(--font-work);
+}
+
+/* Section Level 3 of Business*/
+#level3business {
+    background: var(--color-yellow-1);
+    padding: 3rem 0 14rem;
+    font-family: var(--font-work);
+    color: var(--color-blue-2);
+    position: relative;
+    margin: 3rem 0 14rem;
+    font-size: 16px;
+}
+
+#level3business strong {
+    font-size: 18px;
+}
+
+#level3business h2,
+#level3business h3 {
+    font-weight: 400;
+    text-align: center;
+}
+
+#level3business .title-row {
+    margin-bottom: 1rem;
+}
+
+#level3business h2 {
+    font-size: 40px;
+}
+
+#level3business h3 {
+    font-size: 30px;
+}
+
+#level3business .col {
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+/* Section Level 3 continuation */
+#level3Content {
+    font-family: var(--font-work);
+    margin: 2rem 0 ;
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+
+#level3Content .col {
+    margin-bottom: 2rem;
+}
+
+#level3Content .pop-content {
+    text-align: left;
+}
+
+/* Section Get Level 3 */
+#getLevel3 {
+    font-family: var(--font-work);
+    color: var(--color-blue-2);
+}
+
+#getLevel3 .title-row {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#getLevel3 .title-row h3 {
+    font-size: 30px;
+    text-transform: none;
+}
+
+#getLevel3 .title-bar {
+    border-left: solid 5px var(--color-orange-1);
+    padding: .5rem 1rem;
+    margin: .5rem 0 1.5rem;
+}
+
+#getLevel3 .title-bar h2 {
+    text-transform: uppercase;
+    font-family: var(--font-roboto-cond);
+    font-weight: 400;
+    color: var(--color-blue-2);
+    font-size: 40px;
+}
+
+#getLevel3 .col {
+    padding: 1rem;
+    gap:1.75rem;
+    line-height: 1.5;
+}
+
+#getLevel3 .col .level-box {
+    border-left: solid 5px var(--color-blue-2);
+}
+
+#getLevel3 .col .level-box h3,
+#getLevel3 .col .level-box h2 {
+    text-transform: uppercase;
+}
+
+#getLevel3 .col .level-box p,
+#getLevel3 .col .level-box h2,
+#getLevel3 .col .level-box h3 {
+    padding: .5rem 1rem;
+}
+
+#getLevel3 .col .level-box .blue-highlight {
+    background: var(--color-blue-1);
+    color: var(--color-white-1);
+    border-radius: 0 5px 5px 0
+}
+
+#getLevel3 .col .level-box .content-2 {
+    background: var(--color-yellow-1);
+    color: var(--color-blue-2);
+    border-radius: 0 5px 5px 0;
+    padding-bottom: 1.5rem;
+}
+
+/* Section stuck On level 2 */
+#stuckOnLevel2 {
+    background: var(--color-blue-1);
+    color: var(--color-white-1);
+    font-family: var(--font-work);
+    padding: 3rem 0 6rem;
+    margin: 3rem 0 9rem;
+}
+
+#stuckOnLevel2 .title-row  h2{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#stuckOnLevel2 .row-2x {
+    margin-bottom: 2rem;
+}
+
+#stuckOnLevel2 .title-row p {
+    margin: .75rem 0;
+}
+
+#stuckOnLevel2 .col p {
+    line-height: 1.5;
+}
+
+#stuckOnLevel2 .col.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Self Employment Trap */
+#selfEmploymentTrap {
+    color: var(--color-blue-2);
+}
+
+#selfEmploymentTrap .title-row {
+    text-align: center;
+    gap: 1.25rem;
+    display: grid;
+    margin-bottom: 2rem;
+}
+
+#selfEmploymentTrap .title-row h2 {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#selfEmploymentTrap .title-row span {
+    font-weight: 600;
+}
+
+#selfEmploymentTrap .row-2x {
+    margin: 3rem 0;
+}
+
+#selfEmploymentTrap .col {
+    line-height: 1.5;
+}
+
+/* Section Steps 1 and 2 - Steps Block */
+
+#stepsBlock .block-pop {
+    background-color: var(--color-blue-2);
+    color: var(--color-white-1);
+    display: grid;
+    gap: .8rem;
+    padding: 2.8rem 2rem;
+    text-align: center;
+    border-radius: 7px;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+#stepsBlock .block-pop h2 {
+    text-transform: uppercase;
+    color: var(--color-orange-1);
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#stepsBlock .block-pop h3 {
+    color: var(--color-white-1);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#stepsBlock .block-pop p {
+    font-family: var(--font-work);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+/* ------------- Footer Settings -------------------- */
+footer {
+    background-color:var(--color-orange-1);
+    color: var(--color-blue-2);
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 5rem;
+}
+
+footer span {
+    margin: auto;
+}
+
+/* Media Queries for Tablet Devices */
+@media screen and ( max-width: 1024px ){
+    
+    .container {
+        width: var(--container-md);
+    }
+
+    /*------------------ Helpers --------------------*/
+
+    .pop-content {
+        font-size: 14px;
+    }
+
+    .after-pop{
+        max-width: 620px;
+    }   
+
+    /*------------------ Header Styles ------------------*/
+
+    
+
+
+
+     
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and ( max-width: 767px ){
+    
+    .container {
+        width: var(--container-sm);
+    }
+
+    /*------------------ Helpers --------------------*/
+
+    .row-2x{
+        grid-template-columns: 1fr;
+    }
+
+    .after-pop{
+        max-width: 300px;
+    }
+
+    /*------------------ Header Styles ------------------*/
+
+    header {
+        margin-bottom: 9rem;
+    }
+
+    
+}

@@ -171,6 +171,123 @@ section {
     line-height: 22px;
 }
 
+.title-row {
+    text-align: center;
+    color: var(--color-blue-2);
+    margin-bottom: 1rem;
+}
+
+.title-row h2 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: var(--font-roboto-cond);
+    text-transform: uppercase;
+}
+
+.title-row h3 {
+    font-family: var(--font-roboto-cond);
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+    font-family: var(--font-work);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.content-yellow {
+    background: var(--color-yellow-1);
+    color: var(--color-blue-2);
+    padding: 1rem;
+}
+
+.p2 {
+    padding: 2rem;
+}
+
+.m2 {
+    margin: 2rem;
+}
+
+.px-2 {
+    padding: 0 2rem;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.px-3 {
+    padding: 0 3rem;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.px-4 {
+    padding: 0 4rem;
+}
+
+.py-4 {
+    padding: 4rem 0;
+}
+
+.mx-2 {
+    margin: 0 2rem;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+ol {
+    font-size: 16px;
+}
+ol li {
+    margin: .5rem .5rem .5rem 1rem;
+    padding-left: .8rem;
+    font-family: var(--font-work);
+    
+}
+ 
+hr.blue-hr {
+    border-bottom: solid 3px var(--color-blue-2);
+    margin: 5rem 0 2rem;
+}
+
+.orangeBox {
+    background: var(--color-orange-1);
+    color: var(--color-blue-2);
+    padding: 2rem;
+}
+
+.blueSection {
+    background:var(--color-blue-2);
+    color:var(--color-white-1);
+    padding: 5rem 0;
+    margin: 5rem 0;
+}
+
+.blueSection h2,
+.blueSection h3 {
+    color: var(--color-white-1);
+}
+
+.counter-dayof {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.counter-dayof span {
+    font-size: 30px;
+    font-weight: 400
+}
+
 /*------------------ Header Styles ------------------*/
 
 header {
@@ -568,6 +685,61 @@ header {
     font-size: 16px;
 }
 
+
+/*  ----------------------- Page 2 ------------------------*/
+ 
+#day2section2 {
+    background: var(--color-blue-2);
+    color: var(--color-white-1);
+    position: relative;
+    padding: 6rem 0 4rem;
+    margin: 8rem 0 3rem;
+}
+
+#day2section2 .row-2x {
+    margin-top: 8rem;
+}
+
+#day2section2 .before-pop {
+    top: -8rem;
+}
+
+#day2section4 {
+    background: var(--color-blue-1);
+    color: var(--color-white-1);
+    padding: 3rem 0 9rem;
+    margin:3rem 0 9rem;
+    position: relative;
+}
+
+#day2section4 .row-2x {
+    margin: 1rem 0 2rem;
+}
+
+#day2PreLast {
+    z-index: 10;
+    margin:3rem 0 -3rem;
+}
+
+#lastDay2 {
+    background: var(--color-blue-1);
+    color: var(--color-white-1);
+    padding: 6rem 0;
+    margin: 0 auto;
+    position: relative;
+    z-index: -10;
+}
+
+#lastDay2 .title-row h2,
+#lastDay2 .title-row p {
+    color: var(--color-white-1);
+}
+
+.day2stepsBlock {
+    margin: -6rem 0 3rem;
+}
+
+
 /* page 5 section after 1*/
 #page5After1 {
     margin-top: -5rem ;
@@ -721,6 +893,20 @@ footer span {
     #stepsBlock .block-pop {
         width: 300px;
     }
+
+    /*Day 2 settings*/
+
+    #day2Section1 {
+        margin-top: 15rem;
+    }
+
+    #day2section2 {
+        margin-top: 10rem;
+        padding-top: 25rem;
+    }
+
+    /* #day2PreLast  */
+
 
     /* page 5 section after 1*/
     #page5After1 {

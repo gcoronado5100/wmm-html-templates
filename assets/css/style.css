@@ -244,12 +244,22 @@ p {
     padding: 4rem 0;
 }
 
+
+
 .mx-2 {
     margin: 0 2rem;
 }
 
 .my-2 {
     margin: 2rem 0;
+}
+
+.my-3 {
+    margin: 3rem 0;
+}
+
+.my-4{
+    margin: 4rem 0;
 }
 
 ol, ul {
@@ -772,6 +782,117 @@ header {
     margin-bottom: 2rem;
 }
 
+#targetTool {
+    background: var(--color-blue-2);
+    color: var(--color-white-1);
+    position: relative;
+    padding: 5rem 0 13rem;
+    margin: 3rem 0 13rem;
+}
+
+#targetTool .row-2x {
+    margin: 2rem 0;
+}
+
+#targetTool .row-2x .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#targetTool .row-2x img {
+    width: 100%;
+    margin: auto;
+}
+
+#targetTool h2,
+#targetTool h3 {
+    color: var(--color-orange-1);
+}
+
+#targetTool .pop-content {
+    padding: 1.25rem 1rem;
+    background: var(--color-orange-1);
+}
+
+.competitor__card {
+    display: grid;
+    border-left: solid 5px var(--color-blue-1);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    gap: 1rem;
+    line-height: 1.5;
+}
+
+.competitor__card .card-title {
+    display: flex
+}
+
+.competitor__card .card-title h3 {
+    background: var(--color-blue-1);
+    padding: .5rem 1rem;
+    color: var(--color-white-1);
+    /* border-radius: 0 .5rem .5rem 0; */
+}
+
+#positioningPage2 {
+    background: var(--color-blue-1);
+    color: var(--color-white-1);
+    line-height: 1.5;
+    position: relative;
+    padding: 10rem 0 10rem;
+    margin: 32rem 0 8rem;
+}
+
+#positioningPage2 h2,
+#positioningPage2 h3 {
+    color: var(--color-white-1);
+}
+
+#positioningPage2 .pop-content {
+    text-align: left;
+    gap: .6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#positioningPage2 .pop-content h3 {
+    color: var(--color-blue-2);  
+}
+
+#positioningPage2 .before-pop {
+    top:-30rem
+}
+
+.listed-content-2 {
+    margin: 1rem 0;
+    display: grid;
+    gap: .8rem;
+}
+
+.listed-content-2 .card {
+    display: flex;
+    gap: 1rem;
+}
+
+.listed-content-2 .card span {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.listed-content-2 .card img {
+    height: 80px;
+    width: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.content-blue-1 {
+    background-color: var(--color-blue-1);
+    color: var(--color-white-1);
+    padding: 1.5rem;
+    margin: 0 -1rem;
+}
 
 /* page 5 section after 1*/
 #page5After1 {
@@ -811,6 +932,8 @@ header {
     color: var(--color-white-1);
     border-radius: 7px;
 }
+
+
 
 /* Page 6*/
 
@@ -1015,6 +1138,22 @@ footer span {
 
     /* #day2PreLast  */
 
+
+    /*Page 3 mobile*/
+    #day3section2 {
+        padding: 12rem 0 17rem;
+        margin: 9rem 0 40rem;
+    }
+
+    #targetTool {
+        padding: 5rem 0 28rem;
+        margin: 3rem 0 25rem;
+    }
+
+    #positioningPage2 {
+        padding: 48rem 0 10rem;
+        margin: 32rem 0 20rem;
+    }
 
     /* page 5 section after 1*/
     #page5After1 {

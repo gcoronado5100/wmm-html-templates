@@ -812,6 +812,36 @@ header {
     border-radius: 7px;
 }
 
+/* Page 6*/
+
+.strategy__container .level-box {
+    margin: 2rem 1rem;
+    border-left: solid 5px var(--color-orange-1);
+    color:var(--color-blue-2)
+}
+
+.strategy__container .level-box .blue-highlight {
+    background: var(--color-blue-2);
+    color: var(--color-orange-1);
+    padding: .8rem;
+    margin:.5rem 0;
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.strategy__container .level-box h3 {
+    font-weight: 500;
+    padding-left: 1.5rem;
+}
+
+.strategy__container .level-box .content,
+.strategy__container .level-box .content-2 {
+    padding: 1rem;
+}
+
+.strategy__container .level-box .content-2 {
+    background: var(--color-yellow-1);
+}
+
 /* page 7*/
 
 .hard-blue__content {

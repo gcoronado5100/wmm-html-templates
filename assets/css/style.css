@@ -208,6 +208,14 @@ p {
     padding: 2rem;
 }
 
+.p3 {
+    padding: 3rem;
+}
+ 
+.px-5 {
+    padding: 5rem 0;
+}
+
 .m2 {
     margin: 2rem;
 }
@@ -244,10 +252,11 @@ p {
     margin: 2rem 0;
 }
 
-ol {
+ol, ul {
     font-size: 16px;
 }
-ol li {
+ol li,
+ul li {
     margin: .5rem .5rem .5rem 1rem;
     padding-left: .8rem;
     font-family: var(--font-work);
@@ -286,6 +295,16 @@ hr.blue-hr {
 .counter-dayof span {
     font-size: 30px;
     font-weight: 400
+}
+
+.blue-section {
+    background: var(--color-blue-1);
+    color: var(--color-white-1);
+}
+
+.blue-section h2,
+.blue-section h3 {
+    color: var(--color-white-1);
 }
 
 /*------------------ Header Styles ------------------*/
@@ -739,6 +758,20 @@ header {
     margin: -6rem 0 3rem;
 }
 
+/* page 3 settings */
+
+#day3section2 {
+    background: var(--color-blue-2);
+    color: var(--color-white-1);
+    position: relative;
+    padding: 6rem 0 16rem;
+    margin: 6rem 0 16rem;
+}
+
+#day3section2.row-2x {
+    margin-bottom: 2rem;
+}
+
 
 /* page 5 section after 1*/
 #page5After1 {
@@ -777,6 +810,50 @@ header {
     background: var(--color-blue-1);
     color: var(--color-white-1);
     border-radius: 7px;
+}
+
+/* page 7*/
+
+.hard-blue__content {
+    background: var(--color-blue-2);
+    color: var(--color-white-1);
+    margin: 2rem -1rem;
+    padding: 1.5rem 1.25rem;
+}
+
+#whatAboutYou {
+    position: relative;
+    background: var(--color-blue-1);
+    color: var(--color-white-1);
+    padding: 12rem 0 8rem;
+    margin: 9rem 0 5rem;
+}
+
+#whatAboutYou h2 {
+    color: var(--color-white-1);
+}
+
+.objective__card {
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap:1rem;
+    margin: 1rem 0;
+    padding: 0 2rem ;
+}
+
+.objective__card img{
+    height: 100px;
+}
+
+.objective__card .objetive__content {
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    
+}
+
+.objective__card .objetive__content span {
+    font-size: 25px;
 }
 
 
@@ -859,7 +936,8 @@ footer span {
         margin-bottom: 12rem;
     }
 
-    #whoAreWe  .bio-card  {
+    #whoAreWe  .bio-card,
+      {
         grid-template-columns: 1fr;
     }
 
@@ -917,5 +995,15 @@ footer span {
     #page5After1 .col-end {
         
         padding-left: .5rem;
+    }
+
+    /* Page 7*/
+    #whatAboutYou {
+        padding: 20rem 0 8rem;
+        margin: 8rem 0 8rem;
+    }
+
+    .objective__card {
+        grid-template-columns: 1fr;
     }
 }
